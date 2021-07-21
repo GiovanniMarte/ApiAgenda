@@ -1,0 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #c9c9c9;
+    background-color: #263238;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.container {
+    display: grid;
+}
