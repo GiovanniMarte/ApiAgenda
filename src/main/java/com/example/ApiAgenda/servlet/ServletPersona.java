@@ -1,8 +1,6 @@
 package com.example.ApiAgenda.servlet;
 
-import com.example.ApiAgenda.model.Persona;
 import com.example.ApiAgenda.service.PersonaService;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;

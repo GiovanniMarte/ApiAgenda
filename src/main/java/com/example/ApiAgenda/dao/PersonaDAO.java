@@ -11,8 +11,7 @@ import java.util.ArrayList;
 
 public class PersonaDAO {
 
-    public PersonaDAO() {
-    }
+    public PersonaDAO() { }
 
     public boolean add(Persona persona) {
         Connection connection = DBConnection.getConnection();
@@ -33,8 +32,8 @@ public class PersonaDAO {
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-            return false;
         }
+        return false;
     }
 
     public boolean delete(String dni) {
@@ -54,8 +53,8 @@ public class PersonaDAO {
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-            return false;
         }
+        return false;
     }
 
     public boolean update(String dni, String nombre, Long telefono) {
@@ -77,8 +76,8 @@ public class PersonaDAO {
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-            return false;
         }
+        return false;
     }
 
     public Persona get(String dni) {
@@ -102,7 +101,6 @@ public class PersonaDAO {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
         return persona;
     }
 
@@ -126,7 +124,6 @@ public class PersonaDAO {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
         return personas;
     }
 }
